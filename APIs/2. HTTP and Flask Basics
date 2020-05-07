@@ -1,0 +1,22 @@
+# HTTP and Flask Basics
+## 1. Overview
+### Covered in this sections
+  - HTTP Basics
+    - Methods
+    - Requests
+    - Responses
+    - Status Codes
+  - Flask Microframework Intro
+    - Creating basic endpoints
+    - Testing resposne using Curl
+### Technologies Used
+  - Flask
+  - Curl
+  
+## 2. Introduction to HTTP
+**Hypertext Transfer Protocol(HTTP)** is a protocol that provides a standardized way for computers to communicate with each other. It has been the foundation for data communication since 1990
+## 3. HTTP Requests
+## 4. HTTP Responses
+## 5. Intro to Flask
+## 6. Introduction to Curl and Chrome
+## 7. Review
