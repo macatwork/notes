@@ -584,17 +584,21 @@ Then in psql
 # All is done except list_id doesn't show and
 
 ## 12. CRUD on a List of To-Do
+
 ### Challenge yourself
 
     * Create a list: Implement a create list form, similar to the To-Do Item.
     * Update a list (and all children of the list.)
     * Delete a list: make the lists deletable, similar to the remove a todo.
+
 ## 13. Many-To-Many Relationships - Part 1
+
 In one-to-many relationships, the foreign key is established on the child model.
 
-In many-to-many a special association table exists to join the two tables together, storing two foreign keys that link to the two foreign tabes that have r elationship with each other.
+In many-to-many a special association table exists to join the two tables together, storing two foreign keys that link to the two foreign tables that have relationships with each other.
 
 ## 14. Many-To-Many Relationships - Part 2
+
 To setup many-to-many in SQLAlchemy
 
 1. Define an association table using `Table` from SQLAlchemy
@@ -602,8 +606,9 @@ To setup many-to-many in SQLAlchemy
 3. Map the association table to a parent model using the option `secondary` in `db.relationship`
 
 ### Example with Order, Product and Order Item
+
 ```
-order_items = db.tabke('order_items',
+order_items = db.table('order_items',
     db.Column('order_id', db.Integer, db.ForeignKey('order.id'), primary_key=True),
     db.Column('product_id', db.Integer,db.ForeignKey('product.id'), primary_key=True)
 )
@@ -617,3 +622,4 @@ class Order(db.Model):
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(), nullable=False)
+```
